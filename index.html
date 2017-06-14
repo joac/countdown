@@ -54,7 +54,7 @@
         <div>
             <h1>Milanesat is going to space!</h1>
             <p>
-                <span id='days'></span>d <span id='hours'></span>:<span id='minutes'></span>:<span id='seconds'></span>
+                <span id='hours'></span>:<span id='minutes'></span>:<span id='seconds'></span>
             </p>
             <a href="http://satellogic.com/">
                 <img src='patch-milanesat_v2.png'/>
@@ -79,7 +79,6 @@
         var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
 
         if ( timeRemaining >= 0 ) {
-          days    = parseInt(timeRemaining / 86400);
           timeRemaining   = (timeRemaining % 86400);
           hours   = parseInt(timeRemaining / 3600);
           timeRemaining   = (timeRemaining % 3600);
@@ -87,7 +86,6 @@
           timeRemaining   = (timeRemaining % 60);
           seconds = parseInt(timeRemaining);
 
-          document.getElementById("days").innerHTML    = parseInt(days, 10);
           document.getElementById("hours").innerHTML   = ("0" + hours).slice(-2);
           document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
           document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
