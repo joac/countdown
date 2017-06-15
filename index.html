@@ -52,50 +52,14 @@
     </head>
     <body>
         <div>
-            <h1>Milanesat is going to space!</h1>
             <p>
-                <span id='hours'></span>:<span id='minutes'></span>:<span id='seconds'></span>
+                Yes!!
             </p>
             <a href="http://satellogic.com/">
                 <img src='patch-milanesat_v2.png'/>
             </a>
         </div>
     </body>
-    <script>
-    function countdown(dateEnd) {
-      var timer, days, hours, minutes, seconds;
-
-      dateEnd = new Date(dateEnd);
-      dateEnd = dateEnd.getTime();
-
-      if ( isNaN(dateEnd) ) {
-        return;
-      }
-
-      timer = setInterval(calculate, 1000);
-
-      function calculate() {
-        var dateStart = new Date();
-        var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
-
-        if ( timeRemaining >= 0 ) {
-          timeRemaining   = (timeRemaining % 86400);
-          hours   = parseInt(timeRemaining / 3600);
-          timeRemaining   = (timeRemaining % 3600);
-          minutes = parseInt(timeRemaining / 60);
-          timeRemaining   = (timeRemaining % 60);
-          seconds = parseInt(timeRemaining);
-
-          document.getElementById("hours").innerHTML   = ("0" + hours).slice(-2);
-          document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
-          document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
-        } else {
-          return;
-        }
-      }
-    }
-    countdown('2017-06-15T00:00:00-03:00');
-    </script>
     <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
