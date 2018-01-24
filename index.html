@@ -10,17 +10,19 @@
         <style>
          @keyframes lighting {
               0% {
-                text-shadow: 0px 0px 2px rgba(158, 154, 135, 0.66);
+                text-shadow: 0px 0px 2px #fafafa;
               }
               50% {
-                text-shadow: 0px 0px 4px rgba(158, 154, 135, 0.66);
+                text-shadow: 0px 0px 4px #fafafa;
               }
               100% {
-                text-shadow: 0px 0px 2px rgba(158, 154, 135, 0.66);
+                text-shadow: 0px 0px 2px #fafafa;
               }
             }
             body {
-                background: url('zig zag wool.png') repeat fixed;
+                background: 
+                    url('background.jpg') no-repeat center fixed,
+                    url('zig zag wool.png') repeat fixed;
                 height: 100%;
                 height: 100vh;
                 width: 100%;
@@ -29,8 +31,8 @@
             h1, p, div {
                 font-family: 'VT323', monospace;
                 text-align: center; 
-                color: rgba(200, 200, 200, 0.8);
-                text-shadow: 0px 0px 2px rgba(158, 154, 135, 0.66);
+                color: white;
+                text-shadow: 0px 0px 2px #fafafa;
                 animation: 1s lighting ease-in-out infinite;
 
             }
@@ -94,7 +96,7 @@
         }
       }
     }
-    countdown('2018-02-02T00:15:00-03:00');
+    countdown('2018-02-02T00:15:51+08:00');
     </script>
         </div>
     </body>
